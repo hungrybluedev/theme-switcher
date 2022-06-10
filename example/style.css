@@ -10,6 +10,7 @@
 * {
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
+  transition: background-color 150ms ease-in-out, color 10ms linear;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 }
 
 main {
-  padding: 25px;
+  padding: 35px;
 }
 
 hr {
@@ -29,7 +30,7 @@ hr {
   border-radius: 5px;
   height: 3px;
   background: var(--fg-secondary);
-  margin-top: 25px;
+  margin-top: 35px;
   margin-bottom: 50px;
 }
 
@@ -164,6 +165,41 @@ nav a {
 
 footer a {
   color: inherit;
+}
+
+form {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+form p,
+form label {
+  font-size: 25px;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+}
+
+form input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+
+  border: 2px solid var(--fg-secondary);
+  transition: 0.2s border linear;
+  margin: 0.3em 1em;
+}
+
+input[type="radio"]:checked {
+  border: 8px solid var(--fg-primary);
 }
 
 /* Special classses */
