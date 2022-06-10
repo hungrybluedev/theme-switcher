@@ -1,3 +1,12 @@
+html {
+  --primary: #bd1767;
+  --secondary: #271a6f;
+  --bg-primary: #eee;
+  --bg-secondary: #d5d5d5;
+  --fg-primary: #333;
+  --fg-secondary: #444;
+}
+
 html[data-theme="light"] {
   --primary: #bd1767;
   --secondary: #271a6f;
