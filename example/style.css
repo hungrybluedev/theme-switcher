@@ -1,0 +1,137 @@
+/* Normalise CSS across all clients */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles */
+
+* {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  /* TODO CHANGE VARIABLES */
+  background: #fafafa;
+  color: #333;
+
+  /* Alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  padding: 25px;
+}
+
+hr {
+  border: none;
+  border-radius: 5px;
+  height: 3px;
+  background: #777;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+  margin: 0.7em 0 0.3em 0;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 3.375em;
+  color: #555;
+}
+
+h2 {
+  font-size: 2.25em;
+  color: #444;
+}
+
+h3 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+  color: #777;
+}
+
+a {
+  text-decoration: none;
+  color: #10710b;
+  font-weight: 700;
+  transition: color 50ms linear;
+}
+
+a:visited {
+  text-decoration: dotted underline;
+  color: #4a5c49;
+}
+
+a:hover {
+  color: #3bc334;
+}
+
+a:active {
+  color: #46e23e;
+}
+
+code,
+pre {
+  font-family: "Source Code Pro", monospace;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+code {
+  padding: 2px 7px;
+}
+
+pre {
+  max-width: 90vw;
+  overflow-x: scroll;
+  padding: 1em;
+  margin: 1.5em 0;
+}
+
+li {
+  margin-left: 1.5em;
+}
+
+blockquote {
+  margin: 1em 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+
+/* Special classses */
+.unique-text {
+  font-weight: 700;
+  color: #bd1767;
+  text-decoration: dashed underline;
+}
+
+/* Desktop-specific rules */
+@media (min-width: 920px) {
+  main {
+    max-width: 70vw;
+  }
+}
