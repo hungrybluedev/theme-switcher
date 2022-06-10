@@ -1,0 +1,24 @@
+{
+  "name": "@hungrybluedev/theme-switcher",
+  "version": "0.0.1",
+  "description": "Makes it easy to add support for theme switching for static websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "keywords": [
+    "theme",
+    "dark-mode",
+    "switch",
+    "ui",
+    "css"
+  ],
+  "author": "Subhomoy Haldar (@hungrybluedev)",
+  "license": "MIT",
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.14.43"
+  }
+}
