@@ -4,7 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
     <title>Theme Switcher Example | Hungry Blue Dev</title>
+    <meta name="title" content="Theme Switcher Example | Hungry Blue Dev" />
+    <meta
+      name="description"
+      content="An example page showing off various custom themes for the theme-switcher ecosystem."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta
+      property="og:title"
+      content="Theme Switcher Example | Hungry Blue Dev"
+    />
+    <meta
+      property="og:description"
+      content="An example page showing off various custom themes for the theme-switcher ecosystem."
+    />
+    <meta property="og:image" content="images/theme-switcher.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta
+      property="twitter:title"
+      content="Theme Switcher Example | Hungry Blue Dev"
+    />
+    <meta
+      property="twitter:description"
+      content="An example page showing off various custom themes for the theme-switcher ecosystem."
+    />
+    <meta property="twitter:image" content="images/theme-switcher.png" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="theme.css" />
@@ -14,8 +48,8 @@
       <div id="logo"></div>
       <nav>
         <ul>
-          <li><a href="https://hungrybluedev.in">Home</a></li>
-          <li><a href="https://hungrybluedev.in/about/">About</a></li>
+          <li><a href="/static/index.html">Home</a></li>
+          <li><a href="/static/settings.html">Settings</a></li>
           <li><a href="https://hungrybluedev.in/contact/">Contact</a></li>
         </ul>
       </nav>
@@ -116,8 +150,8 @@ fn main() {
     <footer>
       <nav>
         <ul>
-          <li><a href="https://hungrybluedev.in">Home</a></li>
-          <li><a href="https://hungrybluedev.in/about/">About</a></li>
+          <li><a href="/static/index.html">Home</a></li>
+          <li><a href="/static/settings.html">Settings</a></li>
           <li><a href="https://hungrybluedev.in/contact/">Contact</a></li>
         </ul>
       </nav>
@@ -125,5 +159,6 @@ fn main() {
         &copy; <a href="https://hungrybluedev.in/">Subhomoy Haldar</a> 2022
       </p>
     </footer>
+    <script src="../dist/switch.js" type="module"></script>
   </body>
 </html>

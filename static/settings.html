@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Theme Switcher Settings | Hungry Blue Dev</title>
+    <meta name="title" content="Theme Switcher Settings | Hungry Blue Dev" />
+    <meta
+      name="description"
+      content="The settings page where you select the theme for the theme-switcher ecosystem."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta
+      property="og:title"
+      content="Theme Switcher Settings | Hungry Blue Dev"
+    />
+    <meta
+      property="og:description"
+      content="The settings page where you select the theme for the theme-switcher ecosystem."
+    />
+    <meta property="og:image" content="images/theme-switcher.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta
+      property="twitter:title"
+      content="Theme Switcher Settings | Hungry Blue Dev"
+    />
+    <meta
+      property="twitter:description"
+      content="The settings page where you select the theme for the theme-switcher ecosystem."
+    />
+    <meta property="twitter:image" content="images/theme-switcher.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <nav>
+        <ul>
+          <li><a href="/static/index.html">Home</a></li>
+          <li><a href="/static/settings.html">Settings</a></li>
+          <li><a href="https://hungrybluedev.in/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <p>Select your preferred theme:</p>
+
+        <div>
+          <input type="radio" id="light" name="theme-choice" value="light" />
+          <label for="light">Light</label>
+        </div>
+
+        <div>
+          <input type="radio" id="dark" name="theme-choice" value="dark" />
+          <label for="dark">Dark</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="light-blue"
+            name="theme-choice"
+            value="light-blue"
+          />
+          <label for="light-blue">Light Blue</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="dark-blue"
+            name="theme-choice"
+            value="dark-blue"
+          />
+          <label for="dark-blue">Dark Blue</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="light-red"
+            name="theme-choice"
+            value="light-red"
+          />
+          <label for="light-red">Light Red</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="dark-red"
+            name="theme-choice"
+            value="dark-red"
+          />
+          <label for="dark-red">Dark Red</label>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/static/index.html">Home</a></li>
+          <li><a href="/static/settings.html">Settings</a></li>
+          <li><a href="https://hungrybluedev.in/contact/">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">
+        &copy; <a href="https://hungrybluedev.in/">Subhomoy Haldar</a> 2022
+      </p>
+    </footer>
+    <script type="module">
+      import { applyTheme, getLocalTheme } from "../dist/switch.js";
+
+      window.addEventListener("pageshow", () => {
+        const currentTheme = getLocalTheme();
+        applyTheme(currentTheme);
+        document.getElementById(currentTheme).checked = true;
+      });
+
+      const allButtons = document.querySelectorAll("input[name=theme-choice]");
+
+      allButtons.forEach((button) =>
+        button.addEventListener("change", () => {
+          applyTheme(button.value);
+        })
+      );
+    </script>
+  </body>
+</html>
