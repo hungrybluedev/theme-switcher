@@ -13,11 +13,8 @@
 }
 
 body {
-  /* TODO CHANGE VARIABLES */
-  background: #fafafa;
-  color: #333;
-
-  /* Alignment */
+  background: var(--bg-primary);
+  color: var(--fg-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +28,7 @@ hr {
   border: none;
   border-radius: 5px;
   height: 3px;
-  background: #777;
+  background: var(--fg-secondary);
   margin-top: 25px;
   margin-bottom: 50px;
 }
@@ -47,45 +44,49 @@ li {
 
 h1 {
   font-size: 3.375em;
-  color: #555;
+  color: var(--fg-secondary);
+  opacity: 0.8;
 }
 
 h2 {
   font-size: 2.25em;
-  color: #444;
+  color: var(--fg-secondary);
+  opacity: 0.9;
 }
 
 h3 {
   font-weight: 400;
   font-style: italic;
   font-size: 1.5em;
-  color: #777;
+  color: var(--fg-secondary);
+  opacity: 0.6;
 }
 
 a {
   text-decoration: none;
-  color: #10710b;
   font-weight: 700;
-  transition: color 50ms linear;
+  transition: opacity 50ms linear;
+  color: var(--secondary);
+  opacity: 0.65;
 }
 
 a:visited {
   text-decoration: dotted underline;
-  color: #4a5c49;
+  opacity: 0.5;
 }
 
 a:hover {
-  color: #3bc334;
+  opacity: 0.8;
 }
 
 a:active {
-  color: #46e23e;
+  opacity: 1;
 }
 
 code,
 pre {
   font-family: "Source Code Pro", monospace;
-  background-color: #ddd;
+  background-color: var(--bg-secondary);
   border-radius: 5px;
 }
 
@@ -110,7 +111,7 @@ blockquote {
 
 blockquote p {
   padding: 15px;
-  background: #ddd;
+  background: var(--bg-secondary);
   border-radius: 5px;
 }
 
@@ -122,41 +123,63 @@ blockquote p::after {
   content: "\201D";
 }
 
-/* Special classses */
-.unique-text {
-  font-weight: 700;
-  color: #bd1767;
-  text-decoration: dashed underline;
+header,
+footer {
+  width: 100vw;
+  background-color: var(--bg-secondary);
+  display: flex;
+  align-items: center;
 }
 
 header {
-  width: 100vw;
   padding: 0.5em 5vw;
-  background-color: #ddd;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+
+footer {
+  padding: 0;
+  margin: 1em 0 0 0;
+  flex-direction: column;
 }
 
 #logo {
   width: 42px;
   height: 24px;
-  background: linear-gradient(75deg, #3bc334, #bd1767);
+  background: linear-gradient(75deg, var(--secondary), var(--primary));
   border-radius: 15%;
 }
 
-header nav ul {
+nav ul {
   list-style-type: none;
   display: flex;
 }
 
-header nav ul li {
+nav ul li {
   margin: 10px;
 }
 
-header nav a {
-  font-weight: 400;
-  color: #333;
+nav a {
+  color: var(--fg-primary);
+}
+
+footer a {
+  color: inherit;
+}
+
+/* Special classses */
+.unique-text {
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: dashed underline;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0.4em;
+  width: 100%;
+  text-align: center;
+  background-color: #232323;
+  color: #ddd;
 }
 
 /* Desktop-specific rules */
