@@ -2,7 +2,9 @@
   "name": "@hungrybluedev/theme-switcher",
   "version": "0.0.1",
   "description": "Makes it easy to add support for theme switching for static websites.",
-  "scripts": {},
+  "scripts": {
+    "test": "echo \"No tests required (yet).\""
+  },
   "keywords": [
     "theme",
     "dark-mode",
