@@ -121,22 +121,9 @@
         &copy; <a href="https://hungrybluedev.in/">Subhomoy Haldar</a> 2022
       </p>
     </footer>
-    <script type="module">
-      import { applyTheme, getLocalTheme } from "../dist/switch.js";
-
-      window.addEventListener("pageshow", () => {
-        const currentTheme = getLocalTheme();
-        applyTheme(currentTheme);
-        document.getElementById(currentTheme).checked = true;
-      });
-
-      const allButtons = document.querySelectorAll("input[name=theme-choice]");
-
-      allButtons.forEach((button) =>
-        button.addEventListener("change", () => {
-          applyTheme(button.value);
-        })
-      );
-    </script>
+    <script
+      src="https://unpkg.com/@hungrybluedev/theme-switcher@latest/dist/settings.js"
+      type="module"
+    ></script>
   </body>
 </html>
