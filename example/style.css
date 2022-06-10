@@ -129,6 +129,36 @@ blockquote p::after {
   text-decoration: dashed underline;
 }
 
+header {
+  width: 100vw;
+  padding: 0.5em 5vw;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 42px;
+  height: 24px;
+  background: linear-gradient(75deg, #3bc334, #bd1767);
+  border-radius: 15%;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 10px;
+}
+
+header nav a {
+  font-weight: 400;
+  color: #333;
+}
+
 /* Desktop-specific rules */
 @media (min-width: 920px) {
   main {
