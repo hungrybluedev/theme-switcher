@@ -1,4 +1,4 @@
-# Theme Switcher
+# [Theme Switcher](https://theme-switcher.com/)
 
 ![npm (scoped)](https://img.shields.io/npm/v/@hungrybluedev/theme-switcher)
 ![GitHub file size in bytes](https://img.shields.io/github/size/hungrybluedev/theme-switcher/dist/switch.js)
