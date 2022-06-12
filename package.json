@@ -15,7 +15,6 @@
   "author": "Subhomoy Haldar (@hungrybluedev)",
   "license": "MIT",
   "files": [
-    "dist/switch.js",
-    "dist/settings.js"
+    "dist/**/*"
   ]
 }
