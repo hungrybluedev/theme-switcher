@@ -1,6 +1,6 @@
 {
   "name": "@hungrybluedev/theme-switcher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Makes it easy to add support for theme switching for static websites.",
   "scripts": {
     "test": "echo \"No tests required (yet).\""
