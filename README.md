@@ -7,7 +7,7 @@
 
 _Theming is hard. Let's make it easier._
 
-[![Screenshot of demo](static/images/theme-switcher.png)](https://demo.theme-switcher.com/)
+[![Screenshot of demo](https://demo.theme-switcher.com/images/theme-switcher.png)](https://demo.theme-switcher.com/)
 
 Sample: [demo.theme-switcher.com](https://demo.theme-switcher.com/)
 
