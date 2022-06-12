@@ -39,6 +39,8 @@
     />
     <meta property="twitter:image" content="images/theme-switcher.png" />
 
+    <script src="../dist/switch.js" type="module" defer></script>
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="theme.css" />
@@ -55,57 +57,67 @@
       </nav>
     </header>
     <main>
-      <form>
+      <form id="theme-switcher-form">
         <p>Select your preferred theme:</p>
 
         <div>
-          <input type="radio" id="light" name="theme-choice" value="light" />
-          <label for="light">Light</label>
-        </div>
-
-        <div>
-          <input type="radio" id="dark" name="theme-choice" value="dark" />
-          <label for="dark">Dark</label>
+          <input
+            type="radio"
+            id="light-theme"
+            name="theme-choice"
+            value="light-theme"
+          />
+          <label for="light-theme">Light</label>
         </div>
 
         <div>
           <input
             type="radio"
-            id="light-blue"
+            id="dark-theme"
             name="theme-choice"
-            value="light-blue"
+            value="dark-theme"
           />
-          <label for="light-blue">Light Blue</label>
+          <label for="dark-theme">Dark</label>
         </div>
 
         <div>
           <input
             type="radio"
-            id="dark-blue"
+            id="light-blue-theme"
             name="theme-choice"
-            value="dark-blue"
+            value="light-blue-theme"
           />
-          <label for="dark-blue">Dark Blue</label>
+          <label for="light-blue-theme">Light Blue</label>
         </div>
 
         <div>
           <input
             type="radio"
-            id="light-red"
+            id="dark-blue-theme"
             name="theme-choice"
-            value="light-red"
+            value="dark-blue-theme"
           />
-          <label for="light-red">Light Red</label>
+          <label for="dark-blue-theme">Dark Blue</label>
         </div>
 
         <div>
           <input
             type="radio"
-            id="dark-red"
+            id="light-red-theme"
             name="theme-choice"
-            value="dark-red"
+            value="light-red-theme"
           />
-          <label for="dark-red">Dark Red</label>
+          <label for="light-red-theme">Light Red</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="dark-red-theme"
+            name="theme-choice"
+            value="dark-red-theme"
+          />
+          <label for="dark-red-theme">Dark Red</label>
         </div>
       </form>
     </main>
@@ -121,9 +133,5 @@
         &copy; <a href="https://hungrybluedev.in/">Subhomoy Haldar</a> 2022
       </p>
     </footer>
-    <script
-      src="https://unpkg.com/@hungrybluedev/theme-switcher@latest/dist/settings.js"
-      type="module"
-    ></script>
   </body>
 </html>
