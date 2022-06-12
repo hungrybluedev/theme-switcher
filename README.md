@@ -17,7 +17,7 @@ I wanted a modular system for theming for all of my projects. I deal with HTML, 
 
 ## Usage
 
-See the [static](static/) folder for an example on how to structure your code. Essentially, it is best to have a dedicated **Settings** page where the user can configure the theme. Any page is valid as a settings page as long as:
+See the [static](https://github.com/hungrybluedev/theme-switcher/tree/main/static) folder for an example on how to structure your code. Essentially, it is best to have a dedicated **Settings** page where the user can configure the theme. Any page is valid as a settings page as long as:
 
 1. It has a `<form>` element with `id="theme-switcher-form"`.
 2. The form has `<input>` elements, one for each supported theme.
@@ -55,7 +55,7 @@ In summary, a `settings.html` file should be have something like:
 ...
 ```
 
-Additionally, the see [theme.css](static/theme.css) for an example of how to configure your themes with **CSS variables**. There should be a `light` theme by default. Add more as you please. An example CSS theme configuration is:
+Additionally, the see [theme.css](https://github.com/hungrybluedev/theme-switcher/blob/main/static/theme.css) for an example of how to configure your themes with **CSS variables**. There should be a `light` theme by default. Add more as you please. An example CSS theme configuration is:
 
 ```css
 html {
@@ -100,7 +100,7 @@ If you prefer having the source code served from your server, you can use save i
 
 ## License
 
-This project is distributed under the MIT license. See the [LICENSE](LICENSE) file for more information.
+This project is distributed under the MIT license. See the [LICENSE](https://github.com/hungrybluedev/theme-switcher/blob/main/LICENSE) file for more information.
 
 ## Contact
 
